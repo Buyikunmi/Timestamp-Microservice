@@ -1,5 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  center
+   h1= title 
+    hr
+    h3
+      p Test Links
+      a(href="/api/timestamp/2017-07-27", target="_blank").link /api/timestamp/2017-07-27
+      br
+      br
+      a(href="/api/timestamp/1501113600000" target="_blank").link /api/timestamp/1501113600000
+

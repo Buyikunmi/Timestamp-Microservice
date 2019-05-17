@@ -12,7 +12,7 @@ router.get("/api/timestamp/:date", (req, res, next) => {
   let unix = date.getTime();
   let utc = date.toUTCString();
 
-  unix == NaN ? res.json({ error: "invalid date" }) : res.json({ unix, utc });
+  !unix ? res.json({ error: "invalid date" }) : res.json({ unix, utc });
 });
 
 module.exports = router;

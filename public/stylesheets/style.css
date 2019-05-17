@@ -4,5 +4,12 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  font-size: 3vw;
+  text-decoration: none;
+  transition: 0.2s ease-in;
+  margin: 10px 10px;
+}
+a:hover {
+  color: #00b7ff;
+  text-decoration: underline;
 }
